@@ -13,5 +13,8 @@
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "git-url-parse": "^11.1.2"
   }
 }
