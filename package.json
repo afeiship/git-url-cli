@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/git-url-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get git http/https/ssh/git url.",
   "homepage": "https://github.com/afeiship/git-url-cli",
   "author": {
@@ -8,7 +8,7 @@
     "email": "1290657123@qq.com"
   },
   "bin": {
-    "git-url-cli": "./bin/index.js"
+    "guc": "./bin/index.js"
   },
   "license": "MIT",
   "publishConfig": {
