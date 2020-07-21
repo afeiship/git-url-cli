@@ -3,17 +3,20 @@
 
 ## installation
 ```shell
+# install
 npm i -g @feizheng/git-url-cli
+
+# uninstall
+npm uninstall -g @feizheng/git-url-cli
 ```
 
 ## usage
 ```shell
-git-url-cli
-
+guc
 # https://github.com/afeiship/git-url-cli
 
 # open the `url`
-open `git-url-cli`
+open `guc`
 ```
 
 ## resources
