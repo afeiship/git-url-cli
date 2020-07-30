@@ -6,7 +6,7 @@
 2. 添加 到 package.json
    ```json
     "bin": {
-      "git-url-cli": "./bin/index.js"
+      "guc": "./bin/index.js"
     },
    ```
-3. npm link 让这个命令可以直接访问 `git-url-cli`
+3. npm link 让这个命令可以直接访问 `guc`
