@@ -20,13 +20,22 @@ open `guc -u`
 ```
 
 ## options
-| api   | short | description                        |
-| ----- | ----- | ---------------------------------- |
-| url   | u     | Github/gitlab url.                 |
-| ssh   | s     | `ssh` git url.                     |
-| https | h     | `https` git url.                   |
-| pages | p     | `gh_pages/pages` in github/gitlab. |
+| api   | short | description                             |
+| ----- | ----- | --------------------------------------- |
+| url   | u     | Github/gitlab url.                      |
+| ssh   | s     | Show `ssh` git url.                     |
+| https | h     | Show `https` git url.                   |
+| pages | p     | Show `gh_pages/pages` in github/gitlab. |
 
+~~~
+Options:
+  --version    Show version number                                     [boolean]
+  --url, -u    Github/gitlab url.                                      [boolean]
+  --ssh, -s    Show `ssh` git url.                                     [boolean]
+  --https, -h  Show `https` git url.                                   [boolean]
+  --pages, -p  Show `gh_pages/pages` in github/gitlab.                 [boolean]
+  --help       Show help                                               [boolean]
+~~~
 
 ```shell
 $ guc -u

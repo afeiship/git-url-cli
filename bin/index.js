@@ -1,11 +1,15 @@
 #!/usr/bin/env node
+require('@feizheng/next-pick-by');
+require('@feizheng/next-intersection');
+require('@feizheng/next-git-url');
 
 const { execSync } = require('child_process');
 const res = execSync('git config --get remote.origin.url');
 const remoteUrl = res.toString().trim();
-const NxGitUrl = require('@feizheng/next-git-url');
-const yargs = require('yargs')
-const gitUrl = new NxGitUrl(remoteUrl);
+const yargs = require('yargs');
+const parser = require('yargs-parser');
+const gitUrl = new nx.GitUrl(remoteUrl);
+
 
 const getter = function (value) {
   return function () {
@@ -14,12 +18,40 @@ const getter = function (value) {
 };
 
 yargs
-  .alias("u", "url")
-  .alias("s", "ssh")
-  .alias("h", "https")
-  .alias("p", "pages")
+  .option("url", {
+    alias: "u",
+    type: 'boolean',
+    describe: "Github/gitlab url."
+  })
+  .option("ssh", {
+    alias: "s",
+    type: 'boolean',
+    describe: "Show `ssh` git url."
+  })
+  .option("https", {
+    alias: "h",
+    type: 'boolean',
+    describe: "Show `https` git url."
+  })
+  .option("pages", {
+    alias: "p",
+    type: 'boolean',
+    describe: "Show `gh_pages/pages` in github/gitlab."
+  })
   .coerce("url", getter('url'))
   .coerce("ssh", getter('ssh'))
   .coerce("https", getter('https'))
   .coerce("pages", getter('pages'))
-  .argv;
+  .help().argv;
+
+const aliases = yargs.parsed.aliases;
+const target = nx.pickBy(parser(process.argv.slice(2)), function (key) {
+  return key !== '_' && key !== '$0'
+});
+
+const inters = nx.intersection(
+  Object.keys(aliases),
+  Object.keys(target)
+);
+
+!inters.length && yargs.showHelp();
