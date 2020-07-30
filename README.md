@@ -27,5 +27,20 @@ open `guc -u`
 | https | h     | `https` git url.                   |
 | pages | p     | `gh_pages/pages` in github/gitlab. |
 
+
+```shell
+$ guc -u
+# https://github.com/afeiship/git-url-cli
+
+$ guc -h
+# https://github.com/afeiship/git-url-cli.git
+
+$ guc -s
+# git@github.com:afeiship/git-url-cli.git
+
+$ guc -p
+# https://afeiship.github.io/git-url-cli/
+```
+
 ## resources
 - https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs
