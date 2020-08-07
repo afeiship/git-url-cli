@@ -18,30 +18,36 @@ const getter = function (value) {
 };
 
 yargs
-  .option("url", {
-    alias: "u",
+  .option('url', {
+    alias: 'u',
     type: 'boolean',
-    describe: "Github/gitlab url."
+    describe: 'Github/gitlab url.'
   })
-  .option("ssh", {
-    alias: "s",
+  .option('ssh', {
+    alias: 's',
     type: 'boolean',
-    describe: "Show `ssh` git url."
+    describe: 'Show `ssh` git url.'
   })
-  .option("https", {
-    alias: "h",
+  .option('https', {
+    alias: 'h',
     type: 'boolean',
-    describe: "Show `https` git url."
+    describe: 'Show `https` git url.'
   })
-  .option("pages", {
-    alias: "p",
+  .option('pages', {
+    alias: 'p',
     type: 'boolean',
-    describe: "Show `gh_pages/pages` in github/gitlab."
+    describe: 'Show `gh_pages/pages` in github/gitlab.'
   })
-  .coerce("url", getter('url'))
-  .coerce("ssh", getter('ssh'))
-  .coerce("https", getter('https'))
-  .coerce("pages", getter('pages'))
+  .option("mr", {
+    alias: "m",
+    type: 'boolean',
+    describe: "Show `merge request url` in gitlab."
+  })
+  .coerce('url', getter('url'))
+  .coerce('ssh', getter('ssh'))
+  .coerce('https', getter('https'))
+  .coerce('pages', getter('pages'))
+  .coerce('mr', getter('mr'))
   .help().argv;
 
 const aliases = yargs.parsed.aliases;
