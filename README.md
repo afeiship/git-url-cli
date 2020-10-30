@@ -1,6 +1,12 @@
 # git-url-cli
 > Get git http/https/ssh/git url.
 
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
+
+
 ## installation
 ```shell
 # install
@@ -18,16 +24,6 @@ guc
 # open the `url`
 open `guc -u`
 ```
-
-## options
-| api     | short | description                               |
-| ------- | ----- | ----------------------------------------- |
-| url     | u     | Github/gitlab url.                        |
-| ssh     | s     | Show `ssh` git url.                       |
-| https   | h     | Show `https` git url.                     |
-| pages   | p     | Show `gh_pages/pages` in github/gitlab.   |
-| actions | a     | Show `actions/piplines` in github/gitlab. |
-
 ~~~
 Options:
   --version      Show version number                                   [boolean]
@@ -59,3 +55,18 @@ $ guc -a
 
 ## resources
 - https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs
+
+## license
+Code released under [the MIT license](https://github.com/afeiship/git-url-cli/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@feizheng/git-url-cli
+[version-url]: https://npmjs.org/package/@feizheng/git-url-cli
+
+[license-image]: https://img.shields.io/npm/l/@feizheng/git-url-cli
+[license-url]: https://github.com/afeiship/git-url-cli/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/git-url-cli
+[size-url]: https://github.com/afeiship/git-url-cli/blob/master/dist/git-url-cli.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@feizheng/git-url-cli
+[download-url]: https://www.npmjs.com/package/@feizheng/git-url-cli
