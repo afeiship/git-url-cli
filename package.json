@@ -1,6 +1,6 @@
 {
-  "name": "@feizheng/git-url-cli",
-  "version": "1.2.3",
+  "name": "@jswork/git-url-cli",
+  "version": "1.0.0",
   "description": "Get git http/https/ssh/git url.",
   "homepage": "https://github.com/afeiship/git-url-cli",
   "author": {
@@ -30,5 +30,11 @@
     "github",
     "gitlab",
     "pages"
-  ]
+  ],
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^14.2.1"
+  }
 }

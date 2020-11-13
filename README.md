@@ -10,10 +10,10 @@
 ## installation
 ```shell
 # install
-npm i -g @feizheng/git-url-cli
+npm i -g @jswork/git-url-cli
 
 # uninstall
-npm uninstall -g @feizheng/git-url-cli
+npm uninstall -g @jswork/git-url-cli
 ```
 
 ## usage
@@ -59,14 +59,14 @@ $ guc -a
 ## license
 Code released under [the MIT license](https://github.com/afeiship/git-url-cli/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/git-url-cli
-[version-url]: https://npmjs.org/package/@feizheng/git-url-cli
+[version-image]: https://img.shields.io/npm/v/@jswork/git-url-cli
+[version-url]: https://npmjs.org/package/@jswork/git-url-cli
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/git-url-cli
+[license-image]: https://img.shields.io/npm/l/@jswork/git-url-cli
 [license-url]: https://github.com/afeiship/git-url-cli/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/git-url-cli
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/git-url-cli
 [size-url]: https://github.com/afeiship/git-url-cli/blob/master/dist/git-url-cli.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/git-url-cli
-[download-url]: https://www.npmjs.com/package/@feizheng/git-url-cli
+[download-image]: https://img.shields.io/npm/dm/@jswork/git-url-cli
+[download-url]: https://www.npmjs.com/package/@jswork/git-url-cli
