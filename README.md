@@ -3,7 +3,6 @@
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
-[![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
 
@@ -60,9 +59,6 @@ Code released under [the MIT license](https://github.com/afeiship/git-url-cli/bl
 
 [license-image]: https://img.shields.io/npm/l/@jswork/git-url-cli
 [license-url]: https://github.com/afeiship/git-url-cli/blob/master/LICENSE.txt
-
-[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/git-url-cli
-[size-url]: https://github.com/afeiship/git-url-cli/blob/master/dist/git-url-cli.min.js
 
 [download-image]: https://img.shields.io/npm/dm/@jswork/git-url-cli
 [download-url]: https://www.npmjs.com/package/@jswork/git-url-cli
