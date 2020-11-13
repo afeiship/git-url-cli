@@ -12,6 +12,7 @@ docs
 
 .editorconfig
 .prettierrc
+.release-it.json
 
 # vscode
 .vscode
