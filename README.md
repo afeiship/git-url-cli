@@ -9,11 +9,7 @@
 
 ## installation
 ```shell
-# install
 npm i -g @jswork/git-url-cli
-
-# uninstall
-npm uninstall -g @jswork/git-url-cli
 ```
 
 ## usage
