@@ -8,7 +8,7 @@
     "email": "1290657123@qq.com"
   },
   "bin": {
-    "guc": "./bin/index.js"
+    "guc": "bin/index.js"
   },
   "license": "MIT",
   "publishConfig": {
