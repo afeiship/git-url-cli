@@ -18,7 +18,8 @@
     "@feizheng/next-git-url": "^1.0.3",
     "@feizheng/next-intersection": "^1.0.0",
     "@feizheng/next-pick-by": "^1.0.0",
-    "git-url-parse": "^11.1.2"
+    "git-url-parse": "^11.1.2",
+    "yargs": "^16.2.0"
   },
   "keywords": [
     "git",
