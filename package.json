@@ -1,6 +1,6 @@
 {
   "name": "@jswork/git-url-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get git http/https/ssh/git url.",
   "homepage": "https://github.com/afeiship/git-url-cli",
   "author": {
