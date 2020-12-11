@@ -15,9 +15,10 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@feizheng/next-git-url": "^1.0.3",
-    "@feizheng/next-intersection": "^1.0.0",
-    "@feizheng/next-pick-by": "^1.0.0",
+    "@jswork/next": "^1.0.4",
+    "@jswork/next-git-url": "^1.0.1",
+    "@jswork/next-intersection": "^1.0.0",
+    "@jswork/next-pick-by": "^1.0.0",
     "git-url-parse": "^11.1.2"
   },
   "keywords": [

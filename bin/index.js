@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-require('@feizheng/next-pick-by');
-require('@feizheng/next-intersection');
-require('@feizheng/next-git-url');
+require('@jswork/next-pick-by');
+require('@jswork/next-intersection');
+require('@jswork/next-git-url');
 
 const { execSync } = require('child_process');
 const res = execSync('git config --get remote.origin.url');
