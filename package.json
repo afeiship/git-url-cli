@@ -8,7 +8,7 @@
     "email": "1290657123@qq.com"
   },
   "bin": {
-    "guc": "./bin/index.js"
+    "guc": "bin/index.js"
   },
   "license": "MIT",
   "publishConfig": {
@@ -19,7 +19,7 @@
     "@jswork/next-git-url": "^1.0.1",
     "@jswork/next-intersection": "^1.0.0",
     "@jswork/next-pick-by": "^1.0.0",
-    "git-url-parse": "^11.1.2"
+    "yargs": "^16.2.0"
   },
   "keywords": [
     "git",
