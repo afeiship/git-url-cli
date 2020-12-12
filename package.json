@@ -1,6 +1,6 @@
 {
   "name": "@jswork/git-url-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get git http/https/ssh/git url.",
   "homepage": "https://github.com/afeiship/git-url-cli",
   "author": {
@@ -16,10 +16,10 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@feizheng/next-git-url": "^1.0.3",
-    "@feizheng/next-intersection": "^1.0.0",
-    "@feizheng/next-pick-by": "^1.0.0",
-    "git-url-parse": "^11.1.2",
+    "@jswork/next": "^1.0.4",
+    "@jswork/next-git-url": "^1.0.1",
+    "@jswork/next-intersection": "^1.0.0",
+    "@jswork/next-pick-by": "^1.0.0",
     "yargs": "^16.2.0"
   },
   "keywords": [
