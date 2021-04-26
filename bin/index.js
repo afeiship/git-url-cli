@@ -10,11 +10,10 @@ const yargs = require('yargs');
 const parser = require('yargs-parser');
 const gitUrl = new nx.GitUrl(remoteUrl);
 
-
 const getter = function (value) {
   return function () {
-    console.log(gitUrl[value]);
-  }
+    console.log(nx.get(gitUrl, value));
+  };
 };
 
 yargs
@@ -48,22 +47,25 @@ yargs
     type: 'boolean',
     describe: 'Show `actions/piplines` in github/gitlab.'
   })
+  .option('name', {
+    alias: 'n',
+    type: 'boolean',
+    describe: 'Get github/gitlab git name.'
+  })
   .coerce('url', getter('url'))
   .coerce('ssh', getter('ssh'))
   .coerce('https', getter('https'))
   .coerce('pages', getter('pages'))
   .coerce('mr', getter('mr'))
   .coerce('actions', getter('actions'))
+  .coerce('name', getter('data.name'))
   .help().argv;
 
 const aliases = yargs.parsed.aliases;
 const target = nx.pickBy(parser(process.argv.slice(2)), function (key) {
-  return key !== '_' && key !== '$0'
+  return key !== '_' && key !== '$0';
 });
 
-const inters = nx.intersection(
-  Object.keys(aliases),
-  Object.keys(target)
-);
+const inters = nx.intersection(Object.keys(aliases), Object.keys(target));
 
 !inters.length && yargs.showHelp();
