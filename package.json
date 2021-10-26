@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@jswork/next": "^1.0.4",
-    "@jswork/next-git-url": "^1.0.1",
+    "@jswork/next-git-url": "^1.0.3",
     "@jswork/next-intersection": "^1.0.0",
     "@jswork/next-pick-by": "^1.0.0",
     "yargs": "^16.2.0"
