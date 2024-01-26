@@ -20,7 +20,8 @@
     "@jswork/next-git-url": "^1.0.3",
     "@jswork/next-intersection": "^1.0.0",
     "@jswork/next-pick-by": "^1.0.0",
-    "yargs": "^16.2.0"
+    "yargs": "^16.2.0",
+    "yargs-parser": "^21.1.1"
   },
   "keywords": [
     "git",
@@ -35,8 +36,5 @@
   ],
   "scripts": {
     "release": "release-it"
-  },
-  "devDependencies": {
-    "release-it": "^14.2.1"
   }
 }
